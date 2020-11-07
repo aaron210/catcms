@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => '我的网站',
+    'name' => 'catcms',
     'beian' => '',
     'cdnurl' => '',
     'version' => '1.0.1',
