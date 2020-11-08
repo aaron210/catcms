@@ -15,3 +15,6 @@ composer install
 > 如果遇到问题：
 overtrue/wechat 4.2.11 requires ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system.
 因为缺少 php_fileinfo 这个扩展，打开即可
+
+## 账号信息
+后台账号：admin 123456

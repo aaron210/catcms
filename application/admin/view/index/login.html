@@ -97,7 +97,9 @@
                 <div class="login-form">
                     <img id="profile-img" class="profile-img-card" src="__CDN__/assets/img/avatar.png"/>
                     <p id="profile-name" class="profile-name-card"></p>
-
+                    <div class="alert alert-warning-light"> 
+                        欢迎使用catCms后台管理系统
+                    </div>
                     <form action="" method="post" id="login-form">
                         <div id="errtips" class="hide"></div>
                         {:token()}
@@ -114,9 +116,9 @@
                         <div class="input-group">
                             <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
                             <input type="text" name="captcha" class="form-control" placeholder="{:__('Captcha')}" data-rule="{:__('Captcha')}:required;length(4)"/>
-                            <span class="input-group-addon" style="padding:0;border:none;cursor:pointer;">
+                            <!-- <span class="input-group-addon" style="padding:0;border:none;cursor:pointer;">
                                         <img src="{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha" width="100" height="30" onclick="this.src = '{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha&r=' + Math.random();"/>
-                                    </span>
+                                    </span> -->
                         </div>
                         {/if}
                         <div class="form-group checkbox">
