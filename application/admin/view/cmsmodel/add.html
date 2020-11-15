@@ -1,0 +1,41 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tablename')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tablename" class="form-control" name="row[tablename]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lanmu_tpl')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lanmu_tpl" class="form-control selectpage" name="row[lanmu_tpl]" data-source="cmsmodel/get_template_list" data-params='{"type":"lanmu"}' type="text" placeholder="" autocomplete="off">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Liebiao_tpl')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-liebiao_tpl" class="form-control selectpage" name="row[liebiao_tpl]" data-source="cmsmodel/get_template_list" data-params='{"type":"liebiao"}' type="text" placeholder="" autocomplete="off">
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xiangqing_tpl')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xiangqing_tpl" class="form-control selectpage" name="row[xiangqing_tpl]" data-source="cmsmodel/get_template_list" data-params='{"type":"xiangqing"}' type="text" placeholder="" autocomplete="off">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
